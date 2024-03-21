@@ -1,0 +1,22 @@
+uuid: 6807b325-55fa-41d2-91d3-037f29dc295d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupal9_bootstrap_sass
+_core:
+  default_config_hash: YtUaEP3a4EuUjHzHn9GSEz2-KZcy-HJSDjmvUzohzxY
+id: drupal9_bootstrap_sass_secondary_local_tasks
+theme: drupal9_bootstrap_sass
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

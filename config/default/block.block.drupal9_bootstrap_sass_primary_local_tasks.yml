@@ -1,0 +1,22 @@
+uuid: 1af96b21-01bc-4529-a4e5-3b2476093f0a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupal9_bootstrap_sass
+_core:
+  default_config_hash: 4L6GmO0xZt459fjIR_5GtVTDAFGMS6YoTB7v9v4pK-M
+id: drupal9_bootstrap_sass_primary_local_tasks
+theme: drupal9_bootstrap_sass
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

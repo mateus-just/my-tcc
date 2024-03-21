@@ -1,0 +1,26 @@
+label: Tradução
+tips:
+  locale-overview:
+    label: 'Tradução da interface do usuário'
+    body: 'Esta página permite que você traduza a interface de usuário ou modifique traduções existentes. Se você tiver instalado o seu site inicialmente em Inglês, você deve primeiro adicionar outro idioma na <a href="[site:url]admin/config/regional/language">página de Idiomas</a>, para poder usar esta página.'
+  locale-language:
+    label: 'Idioma da tradução'
+    body: 'Escolha o idioma que você quer traduzir.'
+  locale-search:
+    label: Buscar
+    body: 'Digite a palavra ou sentença específica que você gostaria de traduzir, você pode também escrever apenas uma parte da palavra.'
+  locale-filter:
+    label: 'Filtrar a busca'
+    body: 'Você pode buscar textos não traduzidos se quiser traduzir algo que não foi traduzido ainda. Se quiser modificar uma tradução existente pode buscar apenas por textos traduzidos.'
+  locale-submit:
+    label: 'Aplicar seu critério de busca'
+    body: 'Para aplicar seu critério de busca, clique no botão <em>Filtrar</em>.'
+  locale-translate:
+    label: Traduzir
+    body: 'Você pode escrever sua própria tradução nos campos de texto da coluna da direita. Tente descobrir em que contexto o texto será usado para traduzi-lo de forma apropriada.'
+  locale-validate:
+    label: 'Validar a tradução'
+    body: 'Ao terminar suas traduções, clique no botão <em>Salvar traduções</em>. Você deve salvar suas traduções sempre antes de trocar de página ou fazer uma nova busca.'
+  locale-continue:
+    label: Continuando
+    body: 'As traduções feitas aqui serão usadas na interface do seu site. Se quiser usá-las em outro site ou modificá-las em um editor externo <a href="[site:url]admin/config/regional/translate/export">exporte-as</a> para um arquivo .po e <a href="[site:url]admin/config/regional/translate/import">importe-as</a> depois.'

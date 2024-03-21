@@ -1,0 +1,17 @@
+label: 'Editando idiomas'
+tips:
+  language-edit-overview:
+    label: 'Editando idiomas'
+    body: '<p>Esta página fornece a habilidade para editar um idioma em seu site, incluindo idiomas personalizados.</p>'
+  language-edit-langcode:
+    label: 'Código do idioma'
+    body: '<p>Você não pode mudar o código de um idioma no site pois ele é usado pelo sistema para acompanhar o idioma.</p>'
+  language-edit-label:
+    label: 'Nome do idioma'
+    body: '<p>O nome do idioma é usado no site para todos os usuários e foi escrito em Inglês. Nomes de idiomas incorporados podem ser traduzidos usando o módulo Interface Translation e tanto nomes de idiomas incorporados como personalizados podem ser traduzidos usando o módulo Configuration Translation.</p>'
+  language-edit-direction:
+    label: 'Direção do idioma'
+    body: '<p>Escolha se o idioma é “Esquerda para a direita" ou “Direita para a esquerda".</p><p>Note que nem todos os temas suportam layouts “Direita para a esquerda”. Teste o tema se você está usando “Direita para esquerda".</p>'
+  language-edit-continue:
+    label: Continuando
+    body: '<p>Agora que você tem uma visão geral do recurso "Editar idioma", você pode continuar por:<ul><li>Editando um idioma</li><li><a href="[site:url]admin/config/regional/language">Visualização de idiomas configurados</a></li></ul></p>'

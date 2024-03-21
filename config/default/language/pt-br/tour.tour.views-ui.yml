@@ -1,0 +1,32 @@
+label: 'Página de edição de view'
+tips:
+  views-main:
+    label: 'Gerenciar as configurações de view'
+    body: 'Ver ou editar as configurações.'
+  views-ui-displays:
+    label: 'Exibições nesta view'
+    body: 'Uma exibição é um modo de mostrar os resultados, exemplo, como uma página ou um bloco. Uma view pode conter múltiplas exibições, que são listadas aqui. A exibição ativa está destacada.'
+  views-ui-view-admin:
+    label: 'Administração da view'
+    body: 'Realizar tarefas administrativas, incluindo adicionar uma descrição e clicar um clone. Clique no botão drop-down para ver as opções disponíveis.'
+  views-ui-format:
+    label: 'Formato de saída'
+    body: 'Defina como exibir os resultados. Por exemplo, escolha <em>Conteúdo</em> para exibir cada item completamente, usando suas respectivas configurações de visualização. Ou escolha <em>Campos</em>, que permite a você exibir apenas alguns campos específicos para cada resultado. Formatos adicionais podem ser incluídos através de módulos que <em>estendam</em> as funcionalidades básicas do Drupal.'
+  views-ui-fields:
+    label: Campos
+    body: 'Se essa view usa campos, eles são listados aqui. Você pode clicar em um campo para configurá-lo.'
+  views-ui-filter:
+    label: 'Filtrar sua view'
+    body: 'Adicione filtros para limitar os resultados exibidos. Por exemplo, para mostrar apenas conteúdo que esteja <em>publicado</em>, você deve adicionar um filtro para <em>Publicado</em> e selecionar <em>Sim</em>.'
+  views-ui-filter-operations:
+    label: 'Filtrar ações'
+    body: 'Adicionar, rearranjar ou remover filtros.'
+  views-ui-sorts:
+    label: 'Critérios de ordenação'
+    body: 'Controlar a ordem em que os resultados são exibidos. Clique em uma regra de ordenação para configurá-la.'
+  views-ui-sorts-operations:
+    label: 'Ações de ordenação'
+    body: 'Adicionar, rearranjar ou remover regras de ordenação.'
+  views-ui-preview:
+    label: Pré-visualizar
+    body: 'Mostrar uma pré-visualização da saída da view.'

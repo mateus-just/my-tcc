@@ -1,0 +1,22 @@
+uuid: 1637dd61-9354-476e-bcb3-65f89b1b5639
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - drupal9_bootstrap_sass
+_core:
+  default_config_hash: 8czxAQiFd-XqdN54tcImHodmm0TigBonXEaC1c0LrIg
+id: drupal9_bootstrap_sass_help
+theme: drupal9_bootstrap_sass
+region: highlighted
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

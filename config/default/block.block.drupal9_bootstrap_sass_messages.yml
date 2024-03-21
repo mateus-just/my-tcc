@@ -1,0 +1,22 @@
+uuid: 7a6e4fc6-b86e-4b15-a01a-add2cf6d0c08
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal9_bootstrap_sass
+_core:
+  default_config_hash: W7HCXHYPYdE4v-L99paf4QOg7B2wWCH3RWuPvl_fabE
+id: drupal9_bootstrap_sass_messages
+theme: drupal9_bootstrap_sass
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

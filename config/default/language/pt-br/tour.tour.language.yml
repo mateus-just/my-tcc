@@ -1,0 +1,20 @@
+label: Idioma
+tips:
+  language-overview:
+    label: Idiomas
+    body: '<p>A página "Idiomas" permite que você adicione, edite, apague, e reordene idiomas para o site.</p>'
+  language-add:
+    label: 'Adicionando idiomas'
+    body: '<p>Para adicionar mais idiomas a seu site, clique no botão "Adicionar idioma".</p><p>Os idiomas adicionados serão exibidos na lista de idiomas e então poderão ser editados ou excluídos.</p>'
+  language-reorder:
+    label: 'Reordenando idiomas'
+    body: '<p>Para reordenar os idiomas em seu site, use os ícones de arrastar próximos de cada idioma.</p><p>A ordem exibida aqui é a ordem de exibição para as listas de idiomas no site, tais como nos blocos de alternância de idiomas fornecidos pelos módulos Interface Translation e Content Translation.</p><p>Quando você terminar de reordenar os idiomas, clique no botão "Salvar configuração" para que as mudanças sejam aplicadas.</p>'
+  language-default:
+    label: 'Definir um idioma como padrão'
+    body: '<p>Você pode alterar o idioma padrão do site definindo um dos idiomas configurados por você como padrão. O site utilizará o idioma padrão em situações onde nenhum idioma foi definido, mas que seja necessário, como por exemplo, o idioma da interface exibida.</p>'
+  language-operations:
+    label: 'Modificando idiomas'
+    body: '<p>São fornecidas operações para editar ou apagar seus idiomas.</p><p>Você pode editar o nome e direção do idioma.</p><p>Idiomas apagados podem ser adicionados novamente. Apagar um idioma remove todas as traduções de interface associadas à ele e o conteúdo neste idioma passará a ser definido como idioma neutro. Note que você não pode apagar o idioma padrão do site.</p>'
+  language-continue:
+    label: Continuando
+    body: '<p>Agora que você tem uma visão geral da página de "Idiomas", você pode continuar:<ul><li><a href="[site:url]admin/config/regional/language/add">Adicionando um idioma</a></li><li>Reordenando idiomas</li><li>Editando um idioma</li><li>Apagando um idioma</li></ul></p>'

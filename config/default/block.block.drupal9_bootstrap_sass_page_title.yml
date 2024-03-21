@@ -1,0 +1,20 @@
+uuid: d3cf3400-c80c-4476-85e2-ca24cd722e76
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupal9_bootstrap_sass
+_core:
+  default_config_hash: iEzOri_QZHDc3Ue2isvsap4rT2iRC02gotDrceSNOgk
+id: drupal9_bootstrap_sass_page_title
+theme: drupal9_bootstrap_sass
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

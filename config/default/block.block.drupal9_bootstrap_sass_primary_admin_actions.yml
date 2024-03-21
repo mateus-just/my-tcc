@@ -1,0 +1,20 @@
+uuid: 3a511f4b-b94e-4373-8277-82d908b94b8e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupal9_bootstrap_sass
+_core:
+  default_config_hash: 8F__TOQA1nRU96CZh9oo_x1KRu1k9wzo27m13xPSpR4
+id: drupal9_bootstrap_sass_primary_admin_actions
+theme: drupal9_bootstrap_sass
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

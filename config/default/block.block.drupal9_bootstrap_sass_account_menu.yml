@@ -1,0 +1,27 @@
+uuid: 8211630c-f466-499c-b0e1-8003f5667fc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - drupal9_bootstrap_sass
+_core:
+  default_config_hash: QW9FViOyFahZ8YJvVCkYUqQpePl10fgN26lE-Igj8bo
+id: drupal9_bootstrap_sass_account_menu
+theme: drupal9_bootstrap_sass
+region: secondary_menu
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

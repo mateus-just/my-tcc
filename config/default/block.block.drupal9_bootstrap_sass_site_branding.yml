@@ -1,0 +1,25 @@
+uuid: ac277e62-f8e0-4acc-a40b-c30d43b683a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal9_bootstrap_sass
+_core:
+  default_config_hash: SydP1OMbHTIPCNStlX6fd0GyMy2o4i_ARuIwlhjxF30
+id: drupal9_bootstrap_sass_site_branding
+theme: drupal9_bootstrap_sass
+region: header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

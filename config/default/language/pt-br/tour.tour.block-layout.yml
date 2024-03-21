@@ -1,0 +1,17 @@
+label: 'Página de Layout de Bloco'
+tips:
+  block-layout:
+    label: 'Layout do Bloco'
+    body: 'Os blocos são caixas de conteúdo renderizadas em uma área ou região de uma página web que pode ser exibida em regiões (como no rodapé ou barra lateral) em sua página.'
+  place-block:
+    label: 'Posicionar Blocos'
+    body: 'Qualquer bloco personalizado ou contribuído pode ser adicionado a uma determinada região clicando em um botão Colocar bloco. Um novo bloco também pode ser criado clicando em Colocar bloco'
+  block-region:
+    label: 'Região do Bloco'
+    body: 'Atribua ou altere a região de um bloco clicando aqui. Uma lista suspensa com todas as regiões será exibida. Você pode colocar um bloco em várias regiões.'
+  configure-block:
+    label: 'Configurar Bloco'
+    body: 'Clicando em "Configurar" você pode ir em frente e editar o conteúdo do bloco, lidar com as configurações de visibilidade e até mesmo alterar a posicão de onde ele está no seu tema.'
+  custom-block-library:
+    label: 'Biblioteca de blocos personalizados'
+    body: 'A tela de gerenciamento de blocos também possui outra aba na parte superior que é usada para adicionar Blocos personalizados. O nome da aba é "Biblioteca de blocos personalizados". Esta aba fornece, em última análise, um link para adicionar blocos personalizados.'

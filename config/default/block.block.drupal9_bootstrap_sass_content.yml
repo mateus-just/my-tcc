@@ -1,0 +1,22 @@
+uuid: 93d25ac7-7d89-4896-9db0-60a499b1c25d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal9_bootstrap_sass
+_core:
+  default_config_hash: LH1yplLV_lObdhhUli59vdHCVxIb2DdcOEgYuiLtfiA
+id: drupal9_bootstrap_sass_content
+theme: drupal9_bootstrap_sass
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

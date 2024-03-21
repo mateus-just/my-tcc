@@ -1,0 +1,23 @@
+uuid: a953829a-485c-4fb1-88e8-eee660be36fe
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - drupal9_bootstrap_sass
+_core:
+  default_config_hash: HmCPWLmhREkJGqs-SHvSwkM6rT_Ofo6LaqjB7teLdrU
+id: drupal9_bootstrap_sass_search_form_narrow
+theme: drupal9_bootstrap_sass
+region: sidebar_first
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

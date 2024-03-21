@@ -1,0 +1,17 @@
+tips:
+  search-api-index-fields-add:
+    label: 'Adicionar campos'
+  search-api-index-fields-label:
+    label: Rótulo
+  search-api-index-fields-machine-name:
+    label: 'Nome de máquina'
+  search-api-index-fields-type:
+    label: Tipo
+  search-api-index-fields-edit:
+    label: 'Editar campo'
+  search-api-index-fields-remove:
+    label: 'Remover campo'
+  search-api-index-fields-submit:
+    label: 'Salvar alterações'
+  search-api-index-fields-cancel:
+    label: 'Cancelar Mudanças'

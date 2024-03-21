@@ -1,0 +1,23 @@
+uuid: 954c2987-ce2d-475d-883e-9459f758ed5b
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - drupal9_bootstrap_sass
+_core:
+  default_config_hash: RBLVIsnALoYvDH4tkFy-n1OWbFSWlofaYt0N29inZJY
+id: drupal9_bootstrap_sass_search_form_wide
+theme: drupal9_bootstrap_sass
+region: top_header_form
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }
