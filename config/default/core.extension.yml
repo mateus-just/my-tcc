@@ -74,6 +74,7 @@ module:
   responsive_image: 0
   rest: 0
   restui: 0
+  robotstxt: 0
   search: 0
   search_api: 0
   seo_checklist: 0
