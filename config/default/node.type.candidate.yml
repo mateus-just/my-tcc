@@ -1,0 +1,18 @@
+uuid: 1b813835-4f6e-4b79-a2da-b73c0438affd
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Candidate
+type: candidate
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

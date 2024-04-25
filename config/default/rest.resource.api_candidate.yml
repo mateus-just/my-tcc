@@ -1,0 +1,18 @@
+uuid: a35db2cb-c20c-45b9-a636-6dd018d308cd
+langcode: en
+status: false
+dependencies:
+  module:
+    - api_candidates
+    - basic_auth
+    - serialization
+id: api_candidate
+plugin_id: api_candidate
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - basic_auth

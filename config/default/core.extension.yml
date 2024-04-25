@@ -5,6 +5,7 @@ module:
   admin_toolbar_links_access_filter: 0
   admin_toolbar_search: 0
   admin_toolbar_tools: 0
+  api_candidates: 0
   automated_cron: 0
   basic_auth: 0
   better_exposed_filters: 0
