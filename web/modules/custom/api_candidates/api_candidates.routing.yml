@@ -1,7 +1,7 @@
 get_candidate_detail:
  path: 'api/get_candidate_detail'
  defaults: { _controller: '\Drupal\api_candidates\Controller\CandidatesController::get_candidate_detail' }
- methods: [POST]
+ methods: [GET]
  requirements:
   _permission: 'access content'
 
@@ -9,6 +9,13 @@ add_candidate_detail:
  path: 'api/add_candidate_detail'
  defaults: { _controller: '\Drupal\api_candidates\Controller\CandidatesController::add_candidate_detail' }
  methods: [POST]
+ requirements:
+   _permission: 'access content'
+
+fetch_candidate_detail:
+ path: 'api/fetch_candidate_detail'
+ defaults: { _controller: '\Drupal\api_candidates\Controller\CandidatesController::fetch_candidate_detail' }
+ methods: [GET]
  requirements:
    _permission: 'access content'
 

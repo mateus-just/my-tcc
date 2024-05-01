@@ -109,28 +109,52 @@ class CandidatesController extends ControllerBase {
         }
     }
 
-    public function fetch_candidate_detail($nid){
-        if(!empty($nid)){
-            $node = Node::load($nid);
+    public function fetch_candidate_detail(Request $request){
+        try{
+            $content = $request->getContent();
+            $params = json_decode($content, TRUE);
+            $nid = $params['nid'];
 
-            $date = date_create($node->get('field_birth_date')->value);
-            $birth_date = date_format($date, "d/m/Y");
-            $candidate_details['candidate_name'] = $node->get('title')->value;
-            $candidate_details['candidate_dob'] = $birth_date;
-            $candidate_details['candidate_gender'] = $node->get('field_gender')->value;
-            $candidate_details['candidate_mobile'] = $node->get('field_mobile')->value;
-            $candidate_details['candidate_email'] = $node->get('field_email_id')->value;
-            $candidate_details['candidate_city'] = $node->get('field_city')->value;
-            $candidate_details['candidate_country'] = $node->get('field_country')->value;
-            $candidate_details['candidate_description'] = $node->get('field_description')->value;
+            if ($nid !== 'NULL' && $nid !== "") {
+                $user = Node::load($nid);
+                if($user !== NULL){
+                    $candidate_details['candidate_id'] = $nid;
+                    $candidate_details['candidate_name'] = $user->get('title')->value;
+                    $date = date_create($user->get('field_birth_date')->value);
+                    $birth_date = date_format($date, "d/m/Y");
+                    $candidate_details['candidate_dob'] = $birth_date;
+                    $candidate_details['candidate_gender'] = $user->get('field_gender')->value;
+                    $candidate_details['candidate_mobile'] = $user->get('field_mobile')->value;
+                    $candidate_details['candidate_email'] = $user->get('field_email_id')->value;
+                    $candidate_details['candidate_city'] = $user->get('field_city')->value;
+                    $candidate_details['candidate_country'] = $user->get('field_country')->value;
+                    $candidate_details['candidate_description'] = $user->get('field_description')->value;
+        
+                    $final_api_response = array(
+                        "status" => "OK",
+                        "message" => "Candidate Details for nid $nid",
+                        "result" => $candidate_details
+                    );
 
-            $final_api_reponse = array(
-                'candidate_detail' => $candidate_details
-            );
-            return $final_api_reponse;
+                    return new JsonResponse($final_api_response);
+                }
+                else{
+                    return new JsonResponse([
+                        "status" => "ERROR",
+                        "message" => "Candidate ID is not found",
+                    ], JsonResponse::HTTP_BAD_REQUEST);
+                }
+            }
+            else{
+                return new JsonResponse([
+                    "status" => "ERROR",
+                    "message" => "ID vazia ou nula",
+                ], JsonResponse::HTTP_BAD_REQUEST);
+            }
         }
-        else{
-            $this->exception_error_msg("Candidate details not found.");
+        catch(Exception $exception) {
+            $web_service->error_exception_msg($exception->getMessage());
+            return new JsonResponse($web_service);
         }
     }
 
