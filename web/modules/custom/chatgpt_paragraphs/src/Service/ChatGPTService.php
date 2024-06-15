@@ -37,6 +37,7 @@ class ChatGPTService {
   public function callChatGPT($prompt) {
     // Defina sua chave de API aqui.
     $api_key = $this->configFactory->get('chatgpt_paragraphs.settings')->get('api_key');
+    $gpt_model = $this->configFactory->get('chatgpt_paragraphs.settings')->get('gpt_model');
 
     try {
       // Faz uma requisição POST para a API do ChatGPT.
@@ -46,7 +47,7 @@ class ChatGPTService {
           'Content-Type' => 'application/json',
         ],
         'json' => [
-          'model' => 'gpt-4o',
+          'model' => $gpt_model,
           'messages' => [
             [
               'role' => 'user',
