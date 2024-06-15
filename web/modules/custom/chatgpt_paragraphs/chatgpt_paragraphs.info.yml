@@ -1,0 +1,6 @@
+name: ChatGPT Paragraphs
+type: module
+description: A custom module that integrates the Open AI API with Drupal and Paragraphs module
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9

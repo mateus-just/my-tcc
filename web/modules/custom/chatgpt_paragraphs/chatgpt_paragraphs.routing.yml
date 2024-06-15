@@ -1,0 +1,34 @@
+# get_candidate_detail:
+#  path: 'chatgpt_paragraphs/get_candidate_detail'
+#  defaults: { _controller: '\Drupal\chatgpt_paragraphs\Controller\ChatgptParagraphsController::get_candidate_detail' }
+#  methods: [GET]
+#  requirements:
+#   _permission: 'access content'
+
+# add_candidate_detail:
+#  path: 'chatgpt_paragraphs/add_candidate_detail'
+#  defaults: { _controller: '\Drupal\chatgpt_paragraphs\Controller\ChatgptParagraphsController::add_candidate_detail' }
+#  methods: [POST]
+#  requirements:
+#    _permission: 'access content'
+
+# fetch_candidate_detail:
+#  path: 'chatgpt_paragraphs/fetch_candidate_detail'
+#  defaults: { _controller: '\Drupal\chatgpt_paragraphs\Controller\ChatgptParagraphsController::fetch_candidate_detail' }
+#  methods: [GET]
+#  requirements:
+#    _permission: 'access content'
+
+# edit_candidate_detail:
+#  path: 'chatgpt_paragraphs/edit_candidate_detail'
+#  defaults: { _controller: '\Drupal\chatgpt_paragraphs\Controller\ChatgptParagraphsController::edit_candidate_detail' }
+#  methods: [POST]
+#  requirements:
+#    _permission: 'access content'
+
+# delete_candidate :
+#  path: 'chatgpt_paragraphs/delete_candidate'
+#  defaults: { _controller: '\Drupal\chatgpt_paragraphs\Controller\ChatgptParagraphsController::delete_candidate' }
+#  methods: [POST]
+#  requirements:
+#    _permission: 'access content'

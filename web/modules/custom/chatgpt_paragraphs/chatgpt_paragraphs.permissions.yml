@@ -1,0 +1,4 @@
+administer chatgpt_paragraphs configuration:
+  title: 'Administer chatgpt_paragraphs configuration'
+  description: 'Optional description.'
+  restrict access: true
