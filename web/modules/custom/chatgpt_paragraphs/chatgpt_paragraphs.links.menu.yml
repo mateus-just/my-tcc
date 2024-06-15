@@ -1,0 +1,11 @@
+chatgpt_paragraphs.admin_config:
+  title: 'ChatGPT Paragraphs'
+  parent: system.admin_config
+  route_name: chatgpt_paragraphs.admin_config
+
+chatgpt_paragraphs.api_settings:
+  title: Settings
+  description: Configure API key from your OpenAI account
+  parent: chatgpt_paragraphs.admin_config
+  route_name: chatgpt_paragraphs.api_settings
+  weight: -100

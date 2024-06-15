@@ -1,4 +1,4 @@
 services:
   chatgpt_paragraphs.chatgpt_service:
     class: Drupal\chatgpt_paragraphs\Service\ChatGPTService
-    arguments: ['@http_client']
+    arguments: ['@http_client', '@config.factory']

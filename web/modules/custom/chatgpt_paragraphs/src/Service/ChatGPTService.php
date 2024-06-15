@@ -3,19 +3,24 @@
 namespace Drupal\chatgpt_paragraphs\Service;
 
 use GuzzleHttp\ClientInterface;
+use Drupal\Core\Config\ConfigFactoryInterface;
 
 class ChatGPTService {
 
   protected $httpClient;
+  protected $configFactory;
 
   /**
    * ChatGPTService constructor.
    *
    * @param \GuzzleHttp\ClientInterface $http_client
    *   The HTTP client.
+   * @param \Drupal\Core\Config\ConfigFactoryInterface $config_factory
+   *   The configuration factory.
    */
-  public function __construct(ClientInterface $http_client) {
+  public function __construct(ClientInterface $http_client, ConfigFactoryInterface $config_factory) {
     $this->httpClient = $http_client;
+    $this->configFactory = $config_factory;
   }
 
   /**
@@ -31,7 +36,8 @@ class ChatGPTService {
    */
   public function callChatGPT($prompt) {
     // Defina sua chave de API aqui.
-    $api_key = 'sk-proj-opqlFDZl4gBYhDeONrR7T3BlbkFJWDyPgMrgliFCQCbjK4rs';
+    $api_key = $this->configFactory->get('chatgpt_paragraphs.settings')->get('api_key');
+    // $api_key = 'sk-proj-opqlFDZl4gBYhDeONrR7T3BlbkFJWDyPgMrgliFCQCbjK4rs';
 
     try {
       // Faz uma requisição POST para a API do ChatGPT.

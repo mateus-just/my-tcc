@@ -4,3 +4,4 @@ description: A custom module that integrates the Open AI API with Drupal and Par
 package: Custom
 core: 8.x
 core_version_requirement: ^8 || ^9
+configure: chatgpt_paragraphs.settings
