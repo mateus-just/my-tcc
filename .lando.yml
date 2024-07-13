@@ -7,7 +7,7 @@ config:
   index: false
   edge: false
   cache: false
-  xdebug: false
+  xdebug: debug
   composer_version: 2.2.6
 proxy:
   phpmyadmin:
@@ -66,3 +66,20 @@ tooling:
     service: nodeserver
   yarn:
     service: nodeserver
+  xdebug-on:
+    service: appserver
+    description: Enable Xdebug.
+    user: root
+    cmd:
+      - echo "xdebug.mode = develop,debug" > /usr/local/etc/php/conf.d/zzzz-sqd-xdebug-config.ini
+      - echo "xdebug.start_with_request = yes" >> /usr/local/etc/php/conf.d/zzzz-sqd-xdebug-config.ini
+      - echo "xdebug.discover_client_host=1" >> /usr/local/etc/php/conf.d/zzzz-sqd-xdebug-config.ini
+      - docker-php-ext-enable xdebug && kill -USR2 $(pgrep -o php-fpm) > /dev/null || /etc/init.d/apache2 reload
+      - tput setaf 2 && echo "Xdebug On" && tput sgr 0 && echo
+  xdebug-off:
+    service: appserver
+    description: Disable Xdebug.
+    user: root
+    cmd:
+      - rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && kill -USR2 $(pgrep -o php-fpm) > /dev/null || /etc/init.d/apache2 reload
+      - tput setaf 1 && echo "Xdebug Off" && tput sgr 0 && echo
