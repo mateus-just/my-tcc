@@ -54,7 +54,7 @@ class ChatGPTService {
               'content' => $prompt,
             ],
           ],
-          'max_tokens' => 150,
+          'max_tokens' => 500,
         ],
       ]);
 
