@@ -103,8 +103,8 @@ class ChatGPTParagraphsWidget extends WidgetBase
     $max_length = $triggering_element['#attributes']['data-max-length'];
 
     if($max_length == null){
-      $prompt = $form_state->getValue([$field_name, $delta, 'prompt']);
-      $response_text = \Drupal::service('chatgpt_paragraphs.chatgpt_service')->callChatGPT($prompt);
+      $prompt = $form_state->getValue([$field_name, $delta, 'prompt']) . ', responda com no máximo 8000 caracteres';
+      $response_text = $this->callChatGPTWithLimit($prompt, 8000);
     }
     else{
       $prompt = $form_state->getValue([$field_name, $delta, 'prompt']) . ', responda com no máximo ' . $max_length . ' caracteres';
@@ -125,19 +125,25 @@ class ChatGPTParagraphsWidget extends WidgetBase
     $attempts = 0;
     $max_attempts = 10; // Limit the number of attempts to prevent infinite loops
 
-    while (strlen($response_text) > $max_length || $response_text === '') {
-      $response_text = \Drupal::service('chatgpt_paragraphs.chatgpt_service')->callChatGPT($prompt);
-      $attempts++;
+    if($max_length < 8000){
+      while (strlen($response_text) > $max_length || $response_text === '') {
+        $response_text = \Drupal::service('chatgpt_paragraphs.chatgpt_service')->callChatGPT($prompt);
+        $attempts++;
 
-      if ($attempts >= $max_attempts) {
-        break;
+        if ($attempts >= $max_attempts) {
+          break;
+        }
       }
+
+      if (strlen($response_text) > $max_length) {
+        $response_text = substr($response_text, 0, $max_length);
+      }
+    }
+    else{
+      $response_text = \Drupal::service('chatgpt_paragraphs.chatgpt_service')->callChatGPT($prompt);
     }
 
     // If the response is still too long, truncate it.
-    if (strlen($response_text) > $max_length) {
-      $response_text = substr($response_text, 0, $max_length);
-    }
 
     return $response_text;
   }
