@@ -37,7 +37,6 @@ class ChatGPTService {
   public function callChatGPT($prompt) {
     // Defina sua chave de API aqui.
     $api_key = $this->configFactory->get('chatgpt_paragraphs.settings')->get('api_key');
-    // $api_key = 'sk-proj-opqlFDZl4gBYhDeONrR7T3BlbkFJWDyPgMrgliFCQCbjK4rs';
 
     try {
       // Faz uma requisição POST para a API do ChatGPT.
